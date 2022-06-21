@@ -15,16 +15,18 @@
         elmBoite__contenu.classList.add("elmBoite__contenu");
         elmBoite__x.classList.add("boite__x");
 
+        let titres = document.querySelectorAll("h2");
+        let titreArticle = titres[1].innerHTML;
+
         elmBody.appendChild(elmBoite__modale);
-        elmBoite__modale.appendChild(elmBoite__contenu);
         elmBoite__modale.appendChild(elmBoite__x);
+        elmBoite__modale.appendChild(elmBoite__contenu);
 
         elmBoite__x.innerHTML = "X";
-        elmBoite__contenu.innerHTML = "Ceci est un test";
+        elmBoite__contenu.innerHTML = titreArticle;
     }
     
     creer_boite_modale();
-    console.log(elmBoite__modale);
 
     elmOK.addEventListener('mousedown', function(){
         console.log('Bravo, le script fonctionne!');

@@ -1,4 +1,4 @@
-.code__adresse {
+.code__article {
   margin: 10px;
   padding: 10px;
   border-left: 4px solid #005;
@@ -28,5 +28,11 @@
   position: absolute;
   top: 10px;
   left: 10px;
+}
+
+.elmBoite__contenu {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 /*# sourceMappingURL=style.css.map */
